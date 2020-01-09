@@ -9,7 +9,7 @@ body {
 }
 
 h2 {
-     background-color: #5583c5;
+     background-color: #55B3c5;
      margin: 0;
      padding: 20px;
      color:white;
@@ -19,4 +19,108 @@ fieldset {
     margin: 20px;
     padding: 20px;
     border: 2px dashed #dddddd;
+}
+
+legend {
+
+    font-size: 16px;
+    font-weight: 900; /* Para lo claro de la letra*/
+
+}
+
+fieldset > span {
+    color: #6278b0;
+    padding: 20px 40px;
+    display: block; /*  Ocupa toda la linea  */
+    background-color: #cce9f8;
+    /*              background-image   background-repeat  backgraound-position  background-color*/
+    background: url('./../img/dados.png') no-repeat center left 5px #cce9f8;
+    background-size: 20px 20px;
+    border:1px solid #6278b0;
+    margin-bottom: 10px;
+}
+
+.formElement {
+    padding: 5px 110px;
+    width: 30px;
+}
+
+select[name=rate] {
+    font-size: 14px;
+    width: 300px;
+}
+
+#submitButton, #resetButton{
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 0px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 100px;
+    text-align: center;
+}
+
+#submitButton {
+    background-color: #cce9f8;
+    
+}
+
+#resetButton{
+    background-color: #6278b0;
+}
+
+.click:hover{
+    cursor: pointer;
+    opacity: .8;
+}
+
+#submitButton:hover{
+    background-color: black;
+}
+
+table{
+    border: 1px solid #eee;
+    margin: 10px auto; /*Solo para elementos en bloque*/
+    border-collapse: collapse; /*Quitar los bordes individuales*/
+}
+
+th,td{
+    border:1px solid #eee;
+    padding: 15px 35px;
+}
+
+th{
+    color:white;
+    background-color: #55B3c5;
+    text-transform: uppercase;
+}
+td{
+    color: #999;
+}
+tr:hover{
+    background-color: #f4ff4f;
+    
+}
+td:hover{
+    color:#555;
+}
+
+ul{
+    background-color: #ccc;
+    list-style-type: none;
+    overflow: hidden;
+}
+li{
+    float: left;
+    padding: 20px;
+}
+li > a{
+    text-decoration: none;  
+    color:#4f5454 ;
+}
+li:hover, li>a:hover{
+    cursor: pointer;
+    color: white;
+    background-color: #999;
 }

@@ -75,17 +75,19 @@
         <form action="" method="GET">
             <fieldset>
                 <legend>Leave us a comment</legend>
+                <span>No se va a revelar información</span>
                 <label for="firstnameInput">
-                    First name: <input type="text" id="fname" name="fname">
+                    First name: <input type="text" id="fname" name="fname" class="formElement">
                 </label>
-                <div for="lastnameInput">
-                    Last name: <input type="text" id="lname" name="lname">
-                </div>
-                <div for="emailInput">
-                    Email: <input type="text" id="email" name="email"></div>
-                <div for="phonenumberInput">
-                    Phone number: <input type="text" id="pnumber" name="pnumber">
-                </div>
+                <label for="lastnameInput">
+                    Last name: <input type="text" id="lname" name="lname" class="formElement">
+                </label>
+                <label for="emailInput">
+                    Email: <input type="email" id="email" name="email" class="formElement">
+                </label>
+                <label for="phonenumberInput">
+                    Phone number: <input type="tel" id="pnumber" name="pnumber" class="formElement">
+                </label>
 
                 <a>Rate us:</a>
 
@@ -112,8 +114,10 @@
                 Yes: <input type="radio" id="yes">
                 </div>
                 <div for="submitButton">
-                    <input type="submit" id="submitButton" value="Submit">
+                    <input type="submit" id="submitButton" value="Submit" class="click">
+                    <input type="reset" id="resetButton" value="Reset" class="click">
                 </div>
+                
             </fieldset>
         </form>
         <!--Pie de Pagina -->
